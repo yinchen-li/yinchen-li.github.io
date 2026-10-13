@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 站点地图：可在新增页面后手动补充 <url> 节点 -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yinchen-li.github.io/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://yinchen-li.github.io/about/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yinchen-li.github.io/blog/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yinchen-li.github.io/blog/example-post/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yinchen-li.github.io/projects/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://yinchen-li.github.io/projects/example-project/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yinchen-li.github.io/archive/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yinchen-li.github.io/tags/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>

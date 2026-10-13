@@ -1,0 +1,50 @@
+/* ==========================================================================
+   pages/blog.css
+   博客列表页特有样式：工具栏、文章列表布局、年份分组。
+   ========================================================================== */
+
+.blog-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-block: var(--space-6);
+}
+
+.blog-toolbar .search {
+  flex: 1 1 260px;
+  max-width: 360px;
+}
+
+/* 年份分组标题（列表 / 归档共用风格） */
+.year-group + .year-group {
+  margin-top: var(--space-8);
+}
+
+.year-group__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+}
+
+.year-group__title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+@media (max-width: 768px) {
+  .blog-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .blog-toolbar .search {
+    max-width: none;
+  }
+}

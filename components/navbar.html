@@ -1,0 +1,27 @@
+<!--
+  components/navbar.html
+  ------------------------------------------------------------------
+  预留组件：导航栏（Navigation）。
+  当前各页面直接内联相同的导航结构。
+  未来可迁移为独立组件；导航项高亮由 assets/js/navbar.js 处理。
+
+  占位变量（未来可替换）：
+  {{HOME_URL}}  {{BLOG_URL}}  {{PROJECTS_URL}}
+  {{ARCHIVE_URL}}  {{ABOUT_URL}}
+  ------------------------------------------------------------------
+-->
+<button class="nav-toggle" type="button" aria-label="切换导航菜单"
+        aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+  <span class="nav-toggle__bar"></span>
+  <span class="nav-toggle__bar"></span>
+  <span class="nav-toggle__bar"></span>
+</button>
+<nav class="site-nav" id="site-nav" aria-label="主导航" data-nav>
+  <ul class="nav-list">
+    <li><a class="nav-link" href="{{HOME_URL}}">Home</a></li>
+    <li><a class="nav-link" href="{{BLOG_URL}}">Blog</a></li>
+    <li><a class="nav-link" href="{{PROJECTS_URL}}">Projects</a></li>
+    <li><a class="nav-link" href="{{ARCHIVE_URL}}">Archive</a></li>
+    <li><a class="nav-link" href="{{ABOUT_URL}}">About</a></li>
+  </ul>
+</nav>

@@ -1,0 +1,7 @@
+{
+  "$comment": "标签数据源（示例）。count 表示对应文章数量，用于标签云展示。",
+  "tags": [
+    { "name": "example", "slug": "example", "count": 1 },
+    { "name": "getting-started", "slug": "getting-started", "count": 1 }
+  ]
+}

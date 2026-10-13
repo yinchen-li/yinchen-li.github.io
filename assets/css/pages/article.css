@@ -1,0 +1,98 @@
+/* ==========================================================================
+   pages/article.css
+   文章详情页 / 项目详情页特有样式：正文排版。
+   ========================================================================== */
+
+.article-header {
+  padding-block: var(--space-8) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-header__title {
+  font-size: var(--font-size-3xl);
+}
+
+.article-header__meta {
+  margin-top: var(--space-4);
+}
+
+.article-content {
+  max-width: 72ch;
+  margin-inline: auto;
+  padding-block: var(--space-8);
+}
+
+.article-content > * + * {
+  margin-top: var(--space-4);
+}
+
+.article-content h2 {
+  margin-top: var(--space-8);
+  font-size: var(--font-size-2xl);
+}
+
+.article-content h3 {
+  margin-top: var(--space-6);
+  font-size: var(--font-size-xl);
+}
+
+.article-content p,
+.article-content li {
+  color: var(--color-text-secondary);
+}
+
+.article-content ul,
+.article-content ol {
+  padding-left: var(--space-6);
+}
+
+.article-content li + li {
+  margin-top: var(--space-2);
+}
+
+.article-content a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.article-content blockquote {
+  padding: var(--space-4) var(--space-5);
+  border-left: 4px solid var(--color-primary);
+  background-color: var(--color-bg-alt);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--color-text-secondary);
+}
+
+.article-content code {
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  font-size: 0.9em;
+}
+
+.article-content pre {
+  overflow-x: auto;
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+}
+
+.article-content pre code {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.article-tags {
+  margin-top: var(--space-6);
+}
+
+/* 项目详情：文章头部下的操作区 */
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}

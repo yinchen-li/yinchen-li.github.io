@@ -1,0 +1,23 @@
+<!--
+  components/footer.html
+  ------------------------------------------------------------------
+  预留组件：页脚（Footer）。
+  当前各页面直接内联相同的页脚结构。
+  年份由 assets/js/main.js 填充到 [data-current-year]。
+
+  占位变量（未来可替换）：
+  {{SITE_NAME}}  {{YEAR}}
+  ------------------------------------------------------------------
+-->
+<footer class="site-footer">
+  <div class="container footer__inner">
+    <p class="footer__copyright">
+      &copy; <span data-current-year>{{YEAR}}</span> {{SITE_NAME}}
+    </p>
+    <nav class="footer__nav" aria-label="页脚导航">
+      <a href="{{BLOG_URL}}">Blog</a>
+      <a href="{{PROJECTS_URL}}">Projects</a>
+      <a href="{{ABOUT_URL}}">About</a>
+    </nav>
+  </div>
+</footer>

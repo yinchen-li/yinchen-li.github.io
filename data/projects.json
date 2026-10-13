@@ -1,0 +1,16 @@
+{
+  "$comment": "项目数据源（示例）。页面目前为静态 HTML，本文件用于未来动态渲染。",
+  "projects": [
+    {
+      "slug": "example-project",
+      "name": "Example Project",
+      "year": "2026",
+      "status": "In Progress",
+      "summary": "这是一个示例项目，用于演示项目卡片与详情页的结构。",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "url": "/projects/example-project/",
+      "repo": "",
+      "demo": ""
+    }
+  ]
+}

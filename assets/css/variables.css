@@ -1,0 +1,117 @@
+/* ==========================================================================
+   variables.css
+   全局设计令牌（Design Tokens）：
+   - 颜色（亮色 / 深色）
+   - 字体与字号
+   - 间距
+   - 尺寸、圆角、阴影、过渡
+   所有其他样式文件都应依赖这里定义的变量，避免硬编码具体数值。
+   ========================================================================== */
+
+:root {
+  /* ---------- 颜色：亮色主题（默认） ---------- */
+  --color-bg: #ffffff;              /* 页面背景 */
+  --color-bg-alt: #f6f7f9;          /* 次级背景（区块、卡片底） */
+  --color-surface: #ffffff;         /* 卡片 / 面板背景 */
+  --color-border: #e5e7eb;          /* 边框 / 分割线 */
+  --color-border-strong: #d1d5db;
+
+  --color-text: #1f2933;            /* 主文本 */
+  --color-text-secondary: #52606d;  /* 次要文本 */
+  --color-text-muted: #7b8794;      /* 弱化文本 */
+
+  --color-primary: #2563eb;         /* 品牌主色 */
+  --color-primary-hover: #1d4ed8;
+  --color-primary-soft: #eff4ff;    /* 主色浅底 */
+  --color-primary-contrast: #ffffff;
+
+  --color-accent: #0891b2;
+
+  --color-tag-bg: #eef2ff;          /* 标签背景 */
+  --color-tag-text: #4338ca;        /* 标签文字 */
+
+  /* ---------- 字体 ---------- */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.375rem;   /* 22px */
+  --font-size-2xl: 1.75rem;   /* 28px */
+  --font-size-3xl: 2.25rem;   /* 36px */
+  --font-size-4xl: 3rem;      /* 48px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.25;
+  --line-height-base: 1.7;
+
+  /* ---------- 间距 ---------- */
+  --space-1: 0.25rem;   /* 4px  */
+  --space-2: 0.5rem;    /* 8px  */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-8: 3rem;      /* 48px */
+  --space-10: 4rem;     /* 64px */
+  --space-12: 5rem;     /* 80px */
+
+  /* ---------- 尺寸 ---------- */
+  --container-width: 1080px;
+  --container-padding: var(--space-5);
+  --header-height: 64px;
+
+  /* ---------- 圆角 ---------- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-full: 999px;
+
+  /* ---------- 阴影 ---------- */
+  --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-md: 0 4px 16px rgba(16, 24, 40, 0.08);
+  --shadow-lg: 0 12px 32px rgba(16, 24, 40, 0.12);
+
+  /* ---------- 过渡 ---------- */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+
+  /* ---------- 层级 ---------- */
+  --z-header: 100;
+  --z-overlay: 90;
+}
+
+/* ---------- 深色主题：通过 <html data-theme="dark"> 切换 ---------- */
+[data-theme="dark"] {
+  --color-bg: #0f1419;
+  --color-bg-alt: #161b22;
+  --color-surface: #161b22;
+  --color-border: #26303b;
+  --color-border-strong: #33404f;
+
+  --color-text: #e6edf3;
+  --color-text-secondary: #adbac7;
+  --color-text-muted: #768390;
+
+  --color-primary: #4f8cff;
+  --color-primary-hover: #6ea1ff;
+  --color-primary-soft: #172033;
+  --color-primary-contrast: #0b1220;
+
+  --color-accent: #22d3ee;
+
+  --color-tag-bg: #1c2740;
+  --color-tag-text: #a5b4fc;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+}

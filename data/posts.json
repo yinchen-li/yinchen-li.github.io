@@ -1,0 +1,15 @@
+{
+  "$comment": "博客文章数据源（示例）。页面目前为静态 HTML，本文件用于未来动态渲染 / 搜索索引。",
+  "posts": [
+    {
+      "slug": "example-post",
+      "title": "Example Blog Post",
+      "date": "2026-01-01",
+      "author": "Yinchen Li",
+      "tags": ["example", "getting-started"],
+      "summary": "这是一篇示例文章，用于演示博客文章的结构与样式。",
+      "url": "/blog/example-post/",
+      "draft": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# robots.txt —— 允许所有爬虫抓取
+User-agent: *
+Allow: /
+
+# 站点地图
+Sitemap: https://yinchen-li.github.io/sitemap.xml

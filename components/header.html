@@ -1,0 +1,20 @@
+<!--
+  components/header.html
+  ------------------------------------------------------------------
+  预留组件：页头（Header）。
+  当前各页面直接内联相同的页头结构，以保证纯静态、零依赖运行。
+  未来如需复用，可通过构建工具（Astro / Hugo / Jekyll / 11ty）或
+  客户端 JS 的 fetch + <template> 方式动态注入本片段。
+
+  占位变量（未来可替换）：
+  {{SITE_NAME}}  {{NAV}}  {{THEME_TOGGLE}}
+  ------------------------------------------------------------------
+-->
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-brand" href="{{HOME_URL}}" aria-label="{{SITE_NAME}} 首页">
+      <span class="site-brand__dot" aria-hidden="true"></span>
+      <span class="site-brand__name">{{SITE_NAME}}</span>
+    </a>
+  </div>
+</header>

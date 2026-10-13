@@ -1,0 +1,63 @@
+/* ==========================================================================
+   pages/about.css
+   关于页特有样式：信息分区、技能列表、联系方式。
+   ========================================================================== */
+
+.about-section {
+  padding-block: var(--space-8);
+}
+
+.about-section + .about-section {
+  border-top: 1px solid var(--color-border);
+}
+
+.about-section__title {
+  margin-bottom: var(--space-5);
+  font-size: var(--font-size-2xl);
+}
+
+.about-text {
+  max-width: 72ch;
+  color: var(--color-text-secondary);
+}
+
+.about-text > * + * {
+  margin-top: var(--space-3);
+}
+
+/* 技能分组 */
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-5);
+}
+
+.skill-group__title {
+  margin-bottom: var(--space-3);
+  font-size: var(--font-size-lg);
+}
+
+/* 联系方式列表 */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list__label {
+  display: inline-block;
+  min-width: 6em;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.contact-list a {
+  color: var(--color-primary);
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
