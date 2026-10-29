@@ -4,13 +4,13 @@
    ========================================================================== */
 
 .hero {
-  padding-block: var(--space-12) var(--space-10);
+  padding-block: var(--space-10);
   text-align: center;
 }
 
 .hero__avatar {
-  width: 120px;
-  height: 120px;
+  width: 96px;
+  height: 96px;
   margin: 0 auto var(--space-5);
   border-radius: var(--radius-full);
   background: linear-gradient(135deg, var(--color-primary),
@@ -31,8 +31,8 @@
 }
 
 .hero__name {
-  font-size: var(--font-size-4xl);
-  letter-spacing: -0.02em;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  letter-spacing: -0.04em;
 }
 
 .hero__tagline {
@@ -44,7 +44,9 @@
 
 .hero__intro {
   margin: var(--space-4) auto 0;
-  max-width: 60ch;
+  max-width: 36em;
+  line-height: 1.9;
+  text-wrap: pretty;
   color: var(--color-text-secondary);
 }
 
@@ -68,5 +70,57 @@
   .hero__avatar {
     width: 96px;
     height: 96px;
+  }
+}
+
+/* Homepage accents reuse the existing light and dark theme tokens. */
+.site--home .site-main {
+  background: radial-gradient(ellipse at 50% 0, var(--color-primary-soft), transparent 65%);
+}
+
+.hero__eyebrow {
+  margin-bottom: var(--space-5);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.12em;
+  color: var(--color-text-secondary);
+}
+
+.hero__actions {
+  align-items: center;
+}
+
+.hero__actions .btn {
+  min-height: 46px;
+}
+
+.hero__about {
+  padding: var(--space-3);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+}
+
+.hero__about:hover {
+  text-decoration: underline;
+}
+
+.site--home .post-item {
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.site--home .project-card__thumb {
+  color: var(--color-primary);
+  font: var(--font-weight-semibold) var(--font-size-3xl) var(--font-mono);
+}
+
+@media (max-width: 480px) {
+  .hero__intro {
+    text-align: left;
+  }
+
+  .hero__about {
+    flex-basis: 100%;
   }
 }

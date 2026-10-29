@@ -28,7 +28,7 @@
 /* 技能分组 */
 .skill-groups {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
   gap: var(--space-5);
 }
 
@@ -60,4 +60,32 @@
 
 .contact-list a:hover {
   text-decoration: underline;
+}
+
+/* A comfortable reading width for the longer biography. */
+.site--about .site-main > .container,
+.site--about .about-section > .container {
+  max-width: 940px;
+}
+
+.site--about .page-header__subtitle,
+.site--about .about-text {
+  max-width: 68ch;
+  line-height: 1.85;
+}
+
+.site--about .skill-group {
+  min-width: 0;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.site--about .contact-list {
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-alt);
+  overflow-wrap: anywhere;
 }
